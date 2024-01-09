@@ -21,13 +21,13 @@
         <ul class="menu">
             <li><a href="">Home</a></li>
             <li><a href="">For Business</a></li>
-            <li><a href="">Our Products</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="ourproducts.html">Our Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
         </ul>
         
         <a href="login.html" class="order-now-btn">Order Now</a>
     </nav>
-
+    
     <div class="hero-section">
         <img src="https://media.seniority.in/mageplaza/blog/post/ktpl_blog/water-rich_fruits_main.jpg" alt="Fruits and Vegetables" class="hero-image">
         <div class="hero-text">
@@ -38,15 +38,40 @@
     
     <h1 style="margin-left:300px;margin-top:70px;">Explore our <span style="color:forestgreen">Fruits and Vegetables</span> at 
     <span style="color:tomato">FRESHO</span></h1>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function login(){
+          var username = $("#username").val();
+          var password = $("#password").val();
+      
+          if (username === "" || password === "") {
+            alert("Please enter both username and password");
+            return;
+          }
+      
+          var hardcodedUsername = "login";
+          var hardcodedPassword = "password";
+      
+          if (username === hardcodedUsername && password === hardcodedPassword) {
+            alert("Login successful!");
+            window.location.href = "ourproducts.html";
+          } else {
+            alert("Invalid username or password");
+          }
+        }
+      </script>
+      
     <section class="dishes" id="dishes">
         <div class="row">
             <div class="card" data-food-id="1">
                 <img src="images/orange.jpg" alt="" class="image">
                 <div class="title">Orange</div>
-                <div class="price">120/Kg</div>
-                <a href="login.html" class="buy-button">Buy Now</a>
+                <div class="price">120/Kg</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                <button type="button" onclick="buyNow()"></button>
             </div>
+            
+
             <div class="card" data-food-id="2">
                 <img src="images/ladiesfinger.jpg" alt="" class="image">
                 <div class="title">Ladiesfinger</div>
